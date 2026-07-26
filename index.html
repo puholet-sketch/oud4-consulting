@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Консалтинг по оценке ОУД4 (ГОСТ Р ИСО/МЭК 15408): маршрут сертификации, комплект свидетельств, сопровождение до технического отчёта." />
+  <title>ОУД4 · Консалтинг оценки доверия</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">К содержанию</a>
+
+  <header class="top">
+    <div class="top__inner">
+      <a class="brand" href="#top" aria-label="ОУД4 — на главную">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text">ОУД<span>4</span></span>
+      </a>
+      <nav class="nav" aria-label="Разделы">
+        <a href="#route">Маршрут</a>
+        <a href="#docs">Документы</a>
+        <a href="#offer">Сопровождение</a>
+        <a href="#contact" class="nav__cta">Заявка</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Меню">
+        <span></span><span></span>
+      </button>
+    </div>
+    <nav id="mobile-nav" class="nav-mobile" hidden>
+      <a href="#route">Маршрут</a>
+      <a href="#docs">Документы</a>
+      <a href="#offer">Сопровождение</a>
+      <a href="#contact">Заявка</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__mesh"></div>
+        <svg class="hero__visual" viewBox="0 0 960 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#C00000" stop-opacity="0.9"/>
+              <stop offset="100%" stop-color="#1A1A1A" stop-opacity="0.2"/>
+            </linearGradient>
+            <linearGradient id="g2" x1="1" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#FB5A5A" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#C00000" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <rect x="80" y="60" width="720" height="520" rx="4" stroke="url(#g1)" stroke-width="1.5" opacity="0.7"/>
+          <rect x="140" y="120" width="600" height="400" rx="2" stroke="url(#g2)" stroke-width="1"/>
+          <path class="hero__path" d="M180 420 L320 280 L420 360 L560 200 L680 300 L780 180" stroke="#C00000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="320" cy="280" r="7" fill="#C00000"/>
+          <circle cx="560" cy="200" r="7" fill="#1A1A1A"/>
+          <circle cx="780" cy="180" r="9" fill="#C00000"/>
+          <text x="180" y="470" fill="#666666" font-family="Unbounded, sans-serif" font-size="14">ASE</text>
+          <text x="400" y="400" fill="#666666" font-family="Unbounded, sans-serif" font-size="14">ADV</text>
+          <text x="620" y="340" fill="#666666" font-family="Unbounded, sans-serif" font-size="14">ATE · AVA</text>
+          <text x="720" y="160" fill="#C00000" font-family="Unbounded, sans-serif" font-size="16" font-weight="600">ТО</text>
+        </svg>
+      </div>
+      <div class="hero__content">
+        <p class="brand-hero">ОУД4</p>
+        <h1>Сертификация без хаоса в&nbsp;документах</h1>
+        <p class="hero__lead">Ведём продукт по ГОСТ&nbsp;Р ИСО/МЭК&nbsp;15408 от задания по безопасности до подписанного технического отчёта.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#contact">Обсудить проект</a>
+          <a class="btn btn--ghost" href="#docs">Скачать пакет</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="strip" aria-label="Для кого">
+      <p>Для команд, которым нужен <strong>ОУД4</strong> и понятный маршрут: что писать, в каком порядке, что можно делать параллельно — и где останавливается зона ответственности разработчика.</p>
+    </section>
+
+    <section class="section" id="route">
+      <div class="section__head">
+        <h2>Маршрут сертификации</h2>
+        <p>Восемь этапов с учётом взаимовлияния свидетельств. Не начинайте тесты до финализации задания по безопасности.</p>
+      </div>
+      <ol class="timeline">
+        <li class="timeline__item" data-step="01">
+          <h3>Подготовка и задание по безопасности</h3>
+          <p>Границы объекта оценки, среда, угрозы, модель нарушителя, функциональные требования. Краеугольный документ комплекта.</p>
+        </li>
+        <li class="timeline__item" data-step="02">
+          <h3>Архитектура безопасности</h3>
+          <p>Модульный проект, функциональная спецификация, представление реализации, защита от обхода функций безопасности.</p>
+        </li>
+        <li class="timeline__item" data-step="03">
+          <h3>Жизненный цикл разработки</h3>
+          <p>Управление конфигурацией, поставка, инструменты, меры безопасности. Можно вести параллельно с другими этапами.</p>
+        </li>
+        <li class="timeline__item" data-step="04">
+          <h3>Тестирование функций безопасности</h3>
+          <p>ПМИ и протоколы с фактическими результатами. Строго после финализации задания по безопасности.</p>
+        </li>
+        <li class="timeline__item" data-step="05">
+          <h3>Анализ уязвимостей</h3>
+          <p>Известные классы уязвимостей и стойкость функций. Может потребовать доработку продукта или руководств.</p>
+        </li>
+        <li class="timeline__item" data-step="06">
+          <h3>Руководства</h3>
+          <p>Безопасная приёмка, эксплуатация, восстановление, обновление. Соответствие реализованным функциям.</p>
+        </li>
+        <li class="timeline__item" data-step="07">
+          <h3>Сборка комплекта свидетельств</h3>
+          <p>Согласованный пакет и проверка трассируемости требований по всем документам.</p>
+        </li>
+        <li class="timeline__item" data-step="08">
+          <h3>Технический отчёт об оценке</h3>
+          <p>Оценка собранных свидетельств, согласование и подписание итогового отчёта.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section section--ink" id="docs">
+      <div class="section__head section__head--light">
+        <h2>Документы для старта</h2>
+        <p>Рабочий комплект: роадмап, вопросы, объём работ, опросники, план действий и архив шаблонов свидетельств.</p>
+      </div>
+      <ul class="docs">
+        <li>
+          <div>
+            <h3>Роадмап ОУД4</h3>
+            <p>Восемь этапов, приоритеты и взаимовлияние свидетельств</p>
+          </div>
+          <a class="btn btn--download" download href="downloads/00-Роадмап-ОУД4-ГОСТ-15408.docx">Скачать</a>
+        </li>
+        <li>
+          <div>
+            <h3>Вопросы к команде и заказчику</h3>
+            <p>Свод с пояснением терминов под каждым пунктом</p>
+          </div>
+          <a class="btn btn--download" download href="downloads/01-Вопросы-к-команде-и-заказчику.docx">Скачать</a>
+        </li>
+        <li>
+          <div>
+            <h3>Что нужно сделать по проекту</h3>
+            <p>Объём работ по этапам роадмапа и параллельным трекам</p>
+          </div>
+          <a class="btn btn--download" download href="downloads/02-Что-нужно-сделать-по-проекту-OUD.docx">Скачать</a>
+        </li>
+        <li>
+          <div>
+            <h3>Опросный лист ОУД4</h3>
+            <p>Черновик заполнения; красным — поля для уточнения</p>
+          </div>
+          <a class="btn btn--download" download href="downloads/03-Опросный-лист-ОУД4-v4.7-заполненный.docx">Скачать</a>
+        </li>
+        <li>
+          <div>
+            <h3>Опросный лист РАДКОП</h3>
+            <p>Реестр российского ПО — параллельный трек</p>
+          </div>
+          <a class="btn btn--download" download href="downloads/04-Опросный-лист-РАДКОП-v1.3-заполненный.docx">Скачать</a>
+        </li>
+        <li>
+          <div>
+            <h3>План действий</h3>
+            <p>Excel: шаги, сроки, зависимости, соответствие роадмапу</p>
+          </div>
+          <a class="btn btn--download" download href="downloads/05-План-действий-OUD.xlsx">Скачать</a>
+        </li>
+        <li class="docs__featured">
+          <div>
+            <h3>Пакет шаблонов свидетельств</h3>
+            <p>ASE, ADV, ALC, ATE, AVA, AGD, технический отчёт — ZIP</p>
+          </div>
+          <a class="btn btn--primary" download href="downloads/пакет-свидетельств-ОУД4.zip">Скачать ZIP</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section" id="offer">
+      <div class="section__head">
+        <h2>Сопровождение под ключ</h2>
+        <p>Три формата — от навигации по маршруту до полного ведения комплекта с командой заказчика.</p>
+      </div>
+      <div class="offer">
+        <article class="offer__item">
+          <h3>Навигация</h3>
+          <p class="offer__price">от 180&nbsp;000&nbsp;₽</p>
+          <ul>
+            <li>Разбор границ объекта оценки</li>
+            <li>Карта документов и зависимостей</li>
+            <li>Сессия с ИБ и разработкой</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost">Запросить</a>
+        </article>
+        <article class="offer__item offer__item--accent">
+          <h3>Сопровождение</h3>
+          <p class="offer__price">от 650&nbsp;000&nbsp;₽</p>
+          <ul>
+            <li>Ведение по всем 8 этапам</li>
+            <li>Черновики ключевых свидетельств</li>
+            <li>Контроль трассируемости</li>
+            <li>Подготовка к работе с оценщиком</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary">Выбрать</a>
+        </article>
+        <article class="offer__item">
+          <h3>Комплект + оценка</h3>
+          <p class="offer__price">по смете</p>
+          <ul>
+            <li>Полный пакет свидетельств</li>
+            <li>Координация с лабораторией</li>
+            <li>Доведение до технического отчёта</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost">Обсудить</a>
+        </article>
+      </div>
+      <p class="offer__note">Цены ориентировочные для планирования бюджета; финальная смета — после скоупа объекта оценки и зрелости артефактов.</p>
+    </section>
+
+    <section class="section section--contact" id="contact">
+      <div class="contact">
+        <div class="contact__copy">
+          <h2>Заявка на консультацию</h2>
+          <p>Коротко опишите продукт и целевой срок оценки. Ответим с предложением формата и следующим шагом.</p>
+        </div>
+        <form class="form" id="lead-form" novalidate>
+          <label>
+            <span>Имя</span>
+            <input name="name" type="text" required autocomplete="name" placeholder="Как к вам обращаться" />
+          </label>
+          <label>
+            <span>Компания</span>
+            <input name="company" type="text" required autocomplete="organization" placeholder="Организация" />
+          </label>
+          <label>
+            <span>Почта</span>
+            <input name="email" type="email" required autocomplete="email" placeholder="name@company.ru" />
+          </label>
+          <label class="form__full">
+            <span>О проекте</span>
+            <textarea name="message" rows="4" required placeholder="Что оцениваем, есть ли черновик ЗБ, желаемый срок"></textarea>
+          </label>
+          <button class="btn btn--primary form__submit" type="submit">Отправить заявку</button>
+          <p class="form__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="brand brand--footer"><span class="brand__mark" aria-hidden="true"></span> ОУД4</span>
+      <p>Консалтинг по оценочному уровню доверия 4 · ГОСТ&nbsp;Р ИСО/МЭК&nbsp;15408</p>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
